@@ -2,9 +2,7 @@ import os
 import openai
 import streamlit as st
 
-openai.api_key = os.environ.get("OPENAI_API_KEY")
-
-openai.api_key = "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"
+openai.api_key = st.secrets["api_key"]
 
 def main():
     st.title("Polygot - The Language Translator")
